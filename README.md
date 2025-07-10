@@ -48,7 +48,7 @@ python -m venv env
 source env/bin/activate  # On Windows, use `env\Scripts\activate`
 
 # 2. Navigate into the project folder
-cd your_project_directory
+cd spotware
 
 # 3. Install dependencies
 pip install -r requirements.txt
