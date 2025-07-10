@@ -53,10 +53,13 @@ cd your_project_directory
 # 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Run the Streamlit app
+# 4. Input your API keys
+Edit the .env file in the directory - you need to put in two API Keys in the corresponding fields (one for VoyageAI - you can find it on https://www.voyageai.com/), and the other - for OpenAI (you can find it on https://openai.com/api/). Input both keys and save the changes. If everything's correct, the app should be running. In case if the app does not respond for some reason, please go into the aprod.py file, incomment two 'os.environ' lines and put your keys in manually.
+
+# 5. Run the Streamlit app
 streamlit run aprod.py
 
-# 5. As soon as you launch the app, please put in two API Keys in the corresponding fields (one for VoyageAI - you can find it on https://www.voyageai.com/), and the other - for OpenAI (you can find it on https://openai.com/api/). Input both keys into the fields and press 'Enter' on each of them (important!).
+
 
 ---
 
