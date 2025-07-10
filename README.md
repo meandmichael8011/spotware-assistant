@@ -55,3 +55,28 @@ pip install -r requirements.txt
 
 # 4. Run the Streamlit app
 streamlit run aprod.py
+
+
+---
+
+## 🐳 Docker Notes (Final Image)
+
+For your convenience, I have also **dockerized the application**. The final container is approximately **6.5 GB** in size, mainly due to **PyTorch dependencies**.
+
+This image allows you to **fully explore the app’s core functionality**, including:
+
+- Answering multi-step currency queries
+- Tool-based reasoning via LangGraph
+- Embedding-based document retrieval
+
+However, if you'd like to see the `graph_output` node in action (which **generates and saves a currency chart as a `.png`**), you’ll need to:
+
+1. **Enter the container’s shell**
+2. **Navigate to the directory where the chart is saved**, e.g., `/app/frontend/saved_figures`
+3. **Manually access or export the image**
+
+### 🧪 Pull and Run
+
+```bash
+docker pull meandmichael8011/spotware-app:latest
+docker run -p 8000:8000 --env-file .env meandmichael8011/spotware-app:latest
