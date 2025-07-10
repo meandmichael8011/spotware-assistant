@@ -56,6 +56,7 @@ pip install -r requirements.txt
 # 4. Run the Streamlit app
 streamlit run aprod.py
 
+# 5. As soon as you launch the app, please put in two API Keys in the corresponding fields (one for VoyageAI - you can find it on https://www.voyageai.com/), and the other - for OpenAI (you can find it on https://openai.com/api/). Input both keys into the fields and press 'Enter' on each of them (important!).
 
 ---
 
